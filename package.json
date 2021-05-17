@@ -1,6 +1,6 @@
 {
   "name": "transi18n",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "bin": {
     "transi18n": "./bin/index.js"
   },
