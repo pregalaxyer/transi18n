@@ -6,13 +6,13 @@ test("excel transform json", () => {
       path.join(__dirname, "../excel/local.xlsx"),
       path.join(__dirname, "../locales")
     )
-  ).toBe("123");
+  ).toBe({});
 });
-test("json transform excel", () => {
-  expect(
-    jsToExcel(
-      path.join(__dirname, "../locales"),
-      path.join(__dirname, "../excel/local.xlsx")
-    )
-  ).toBe("llldsds");
-});
+// test("json transform excel", () => {
+//   expect(
+//     jsToExcel(
+//       path.join(__dirname, "../locales"),
+//       path.join(__dirname, "../excel/local.xlsx")
+//     )
+//   ).toBe(undefined);
+// });
