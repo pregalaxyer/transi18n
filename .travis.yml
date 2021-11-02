@@ -11,5 +11,4 @@ install:
   - npm i
 
 script:
-  - npm link
-  - npm run transi18n:x2j
+  - npm run test
