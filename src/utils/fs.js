@@ -165,10 +165,11 @@ async function excelToJs(READXSLTFILE, DISTFILEPATH) {
     let result = Ejs.render(
       `
       export default {<% items.forEach(function(item, idx, arr){%>
-        <%=item %> : "<%=values[idx] %>",<% }) %>
+        <%=item %> : "<%-values[idx] %>",<% }) %>
       }`,
       { items: keyColArr, values: valColArr }
     );
+    console.log(result);
     writeFile(DISTFILEPATH, worksheet.name, result);
   });
 }
